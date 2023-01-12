@@ -20,9 +20,12 @@
             <img class="w-75" src="images/eclo.svg">
           </div>
           <div class="text-end w-50">
-            <button type="button" class="btn mt-1 fa-2x p-1">
+            <a href="login.html">
+              <button type="button" class="btn mt-1 fa-2x p-1">
               <i class="fa-solid fa-power-off"></i>
             </button>
+            </a>
+            
           </div>
         </div>
       </div>
@@ -43,12 +46,13 @@
           <h5 class="mr-6">Phòng: 2.12</h5>
         </div>        
       </div>
-      <div class="mt-2">
+      <div class="mt-3">
         <h5>GVCN: Nguyễn Thị Thắm</h5>
       </div>
-      <div class="mt-3">
-          <h5>Ngày hiện tại: 07/01/2022</h5>
-        </div>
+      <div class="mt-3 fs-5" >
+        Ngày hiện tại:
+        <b id="current_date"></b>
+      </div>
       <div class="d-flex justify-content-between mt-3">
         <h5>Điểm danh:</h5>
         <div>
@@ -60,98 +64,131 @@
       </div>
     </section>
     <section>
-      <div class="row d-flex justify-content-between mt-3">
-        <div class="w-50 d-flex justify-content-center">
+      <div class="d-flex align-items-center mt-4 ">
+        <div class="col-4 d-flex justify-content-center">
           <div class="card w-75 bg-white rounded-4">
-            <div class="card-body text-center py-0 pt-3"> 
+            <div class="card-body text-center p-1"> 
+              <a href="curriculum.html" class="text-black text-decoration-none">
+                <i class="fa-solid fa-book-open-reader fa-2x"></i>
+                <h6 class="mt-1">Chương trình khung</h6>
+              </a> 
+            </div>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="card w-75 bg-white rounded-4">
+            <div class="card-body text-center p-1">
               <a href="scores.html" class="text-black text-decoration-none">
                 <i class="fa-solid fa-pen-nib fa-2x text-danger"></i>
-                <h6 class="mt-2">Điểm thi</h6>
-              </a>  
+                <h6 class="mt-1">Kết quả học tập</h6>
+              </a> 
             </div>
           </div>
         </div>
-        <div class="w-50 d-flex justify-content-center">
+        <div class="col-4 d-flex justify-content-center">
           <div class="card w-75 bg-white rounded-4">
-            <div class="card-body text-center py-0 pt-3">
+            <div class="card-body text-center p-1">
               <a href="schedule.html" class="text-black text-decoration-none">
                 <i class=" text-primary fa-solid fa-calendar-days fa-2x"></i>
-                <h6 class="mt-2">Thời khóa biểu</h6>
+                <h6 class="mt-1">Thời khóa biểu</h6>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row d-flex justify-content-between mt-3">
-        <div class="w-50 d-flex justify-content-center">
+      <div class="d-flex align-items-center mt-4">
+        <div class="col-4 d-flex justify-content-center">
           <div class="card w-75 bg-white rounded-4">
-            <div class="card-body text-center py-0 pt-3"> 
+            <div class="card-body text-center p-1"> 
               <a href="history-face.html" class="text-black text-decoration-none">
                 <i class="fa-solid fa-calendar-check fa-2x text-warning"></i>
-                <h6 class="mt-2">Nhật ký điểm danh</h6>
-              </a>  
+                <h6 class="mt-1">Nhật ký điểm danh</h6>
+              </a>
             </div>
           </div>
         </div>
-        <div class="w-50 d-flex justify-content-center">
+        <div class="col-4 d-flex justify-content-center">
           <div class="card w-75 bg-white rounded-4">
-            <div class="card-body text-center py-0 pt-3">
+            <div class="card-body text-center p-1">
               <a href="#" class="text-black text-decoration-none">
                 <i class="fa-regular fa-calendar-xmark text-danger fa-2x"></i>
-                <h6 class="mt-2">Xin nghỉ phép</h6>
+                <h6 class="mt-1">Xin nghỉ phép</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="card w-75 bg-white rounded-4">
+            <div class="card-body text-center p-1">
+              <a href="health-records.html" class="text-black text-decoration-none">
+                <i class="fa-regular fa-address-book fa-2x"></i>
+                <h6 class="mt-1">Hồ sơ sức khỏe</h6>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row d-flex justify-content-between mt-3">
-        <div class="w-50 d-flex justify-content-center">
+      <div class="d-flex align-items-center mt-4">
+        <div class="col-4 d-flex justify-content-center">
           <div class="card w-75 bg-white rounded-4">
-            <div class="card-body text-center py-0 pt-3"> 
-              <a href="#" class="text-black text-decoration-none">
+            <div class="card-body text-center p-1"> 
+              <a href="scores.html" class="text-black text-decoration-none">
                 <i class="fa-solid fa-layer-group fa-2x text-info"></i>
-                <h6 class="mt-2">Hoạt động trường</h6>
-              </a>  
+                <h6 class="mt-1">Hoạt động trường</h6>
+              </a> 
             </div>
           </div>
         </div>
-        <div class="w-50 d-flex justify-content-center">
+        <div class="col-4 d-flex justify-content-center">
           <div class="card w-75 bg-white rounded-4">
-            <div class="card-body text-center py-0 pt-3">
-              <a href="#" class="text-black text-decoration-none">
+            <div class="card-body text-center p-1">
+              <a href="schedule.html" class="text-black text-decoration-none">
                 <i class="fa-solid fa-bell fa-2x text-success"></i>
-                <h6 class="mt-2">Thông báo trường</h6>
+                <h6 class="mt-1">Thông báo trường</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="card w-75 bg-white rounded-4">
+            <div class="card-body text-center p-1">
+              <a href="schedule.html" class="text-black text-decoration-none">
+                <i class="fa-solid fa-clipboard-list fa-2x" style="color: #000080;"></i>
+                <h6 class="mt-1">Thực đơn học sinh</h6>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row d-flex justify-content-between mt-3">
-        <div class="w-50 d-flex justify-content-center">
+      <div class="d-flex align-items-center mt-4">
+        <div class="col-4 d-flex justify-content-center">
           <div class="card w-75 bg-white rounded-4">
-            <div class="card-body text-center py-0 pt-3"> 
-              <a href="#" class="text-black text-decoration-none">
-                <i class="fa-solid fa-clipboard-list fa-2x" style="color: #000080;"></i>
-                <h6 class="mt-2">Thực đơn học sinh</h6>
-              </a>  
+            <div class="card-body text-center p-1"> 
+              <a href="list-opinion.html" class="text-black text-decoration-none">
+                <i class="fa-regular fa-bell fa-2x text-secondary"></i>
+                <h6 class="mt-1">Thông báo giáo viên</h6>
+              </a>
             </div>
           </div>
         </div>
-        <div class="w-50 d-flex justify-content-center">
+        <div class="col-4 d-flex justify-content-center">
           <div class="card w-75 bg-white rounded-4">
-            <div class="card-body text-center py-0 pt-3">
+            <div class="card-body text-center p-1"> 
               <a href="list-opinion.html" class="text-black text-decoration-none">
                 <i class="fa-solid fa-pen-to-square fa-2x"></i>
-                <h6 class="mt-2">Mục góp ý</h6>
+                <h6 class="mt-1">Mục đóng góp ý kiến</h6>
               </a>
             </div>
           </div>
         </div>
+        
       </div>
-    </section>
-
-    
-  </div>
-
 </body>
+<script>
+  date = new Date();
+  year = date.getFullYear();
+  month = date.getMonth() + 1;
+  day = date.getDate();
+  document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+</script>
 </html>
