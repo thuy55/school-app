@@ -13,13 +13,20 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
-  }
-.app{
     background-color: #f5f8fa;
-}
+  }
+/* .app{
+} */
 header{
     z-index: 999;
 }
 .container{
     top:60px;
+}
+.listmeals{
+    margin-top: 75px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
