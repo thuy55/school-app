@@ -22,9 +22,9 @@
   
   <header class="text-white bg-dark d-flex justify-content-between p-2 mb-3">
     <div class="w-25 text-start pt-2 ms-1">
-      <a href="dashboard.html"><i class="fa-solid fa-chevron-left text-white fa-lg "></i></a>
+      <a href="leave.html"><i class="fa-solid fa-chevron-left text-white fa-lg "></i></a>
     </div>
-    <div class="w-50 fs-1">Xin nghỉ phép</div>  
+    <div class="w-50 fs-3">Xin nghỉ phép</div>  
     <div class="w-25 justify-content-between text-end pe-2 pt-2 mt-1 ms-1">
 
     </div>
@@ -35,19 +35,39 @@
         <div class="modal-header">
         </div>
         <form method="POST" action="/gop-y/" class="p-2 text-center pt-0">
-            <div class="input-group mb-1">
-                <h5 class="mt-1 text-dark ">Số lượng:</h5>
-                <input type="text" class=" border-0 fs-5" style="background-color: #D9D9D9; width: 221px; margin-left: 50px;margin-right: 6px;"  name="bday">
-                </div> 
-           <div class="input-group mb-1">
-          <h5 class="mt-1 text-dark ">Từ  ngày:</h5>
-          <input type="date" class=" border-0 fs-5" style="background-color: #D9D9D9; width: 221px; margin-left: 56px;margin-right: 6px;"  name="bday">
-          </div> 
- 
-           <div class="input-group mb-1">
-          <h5 class="mt-1 text-dark">Đến ngày:</h5>
-          <input type="date" class=" border-0 fs-5" style="background-color: #D9D9D9; width: 221px; margin-left: 47px;margin-right: 6px;"  name="bday">
-          </div> 
+          <div class="container mb-1">
+            <div class="row">
+                <div class="col col-4">
+                  <h5 class="mt-1 text-dark ">Số lượng:</h5>
+                </div>
+                <div class="col col-8">
+                  <input type="text" class=" border-0 fs-5" style="background-color: #D9D9D9; width: 221px; height: 35px;"  name="bday">
+                </div>
+             
+            </div>
+        </div>
+        <div class="container mb-1">
+          <div class="row">
+              <div class="col col-4">
+                <h5 class="mt-1 text-dark ">Từ  ngày:</h5>
+              </div>
+              <div class="col col-8">
+                <input type="date" class=" border-0 fs-5" style="background-color: #D9D9D9; width: 221px; height: 35px;"  name="bday">
+              </div>
+           
+          </div>
+      </div>
+      <div class="container mb-2">
+        <div class="row">
+            <div class="col col-4">
+              <h5 class="mt-1 text-dark">Đến ngày:</h5>
+            </div>
+            <div class="col col-8">
+              <input type="date" class=" border-0 fs-5" style="background-color: #D9D9D9; width: 221px; height: 35px;"  name="bday">
+            </div>
+         
+        </div>
+    </div>
         <textarea class="form-control form-control-lg mb-5" rows="10" type="content" name="content" id="content" placeholder="Nôi dung"></textarea>
         <button type="submit" class="btn text-white btn-dark w-50 fs-4" name="submit" >Ok</button>
       </form>
