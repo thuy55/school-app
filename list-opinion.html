@@ -11,7 +11,23 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-  <header class="text-white bg-dark d-flex justify-content-between p-2 mb-3">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 123) {
+                document.getElementById('navbar_top').classList.add('fixed-top');
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('navbar_top').classList.remove('fixed-top');
+                document.body.style.paddingTop = '0';
+            }
+        });
+    });
+
+
+</script>
+  <header class="text-white bg-dark d-flex justify-content-between p-2 mb-3 " id="navbar_top">
     <div class="w-25 text-start pt-2 ms-1">
       <a href="dashboard.html"><i class="fa-solid fa-chevron-left text-white fa-lg "></i></a>
     </div>
@@ -29,11 +45,12 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title text-black" id="exampleModalLabel">Thêm góp ý</h5>
-          <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close border-0 bg-white" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <form method="POST" action="/gop-y/" class="p-2 text-center">
+          <input class="form-control form-control-lg mb-3 fs-6" type="name" name="name" id="name" placeholder="Phụ huynh của hs : Nguyễn Văn A">
           <input class="form-control form-control-lg mb-3 fs-6" type="title" name="title" id="title" placeholder="Tiêu đề góp ý">
           <textarea class="form-control form-control-lg mb-3 fs-6" rows="10" type="content" name="content" id="content" placeholder="Nôi dung góp ý"></textarea>
           <button type="submit" class="btn text-white btn-dark w-50 fs-6" name="submit" >GÓP Ý</button>
@@ -44,7 +61,6 @@
   </div>
 </header>
 <div class="container">
-  <h5>Danh sách góp ý :</h5>
   <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
     <div class="d-flex align-items-center gap-3 ">
       <div class="d-flex flex-column gap-2">
@@ -55,6 +71,102 @@
     </div>
   </div>
 
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Tình hình giảng dạy, học tập tại trường</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Nâng cấp thiết bị, cơ sở vật chất cho trường học</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Tình hình giảng dạy, học tập tại trường</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Nâng cấp thiết bị, cơ sở vật chất cho trường học</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Tình hình giảng dạy, học tập tại trường</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Nâng cấp thiết bị, cơ sở vật chất cho trường học</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Tình hình giảng dạy, học tập tại trường</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Nâng cấp thiết bị, cơ sở vật chất cho trường học</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Tình hình giảng dạy, học tập tại trường</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Nâng cấp thiết bị, cơ sở vật chất cho trường học</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Tình hình giảng dạy, học tập tại trường</p>
+      </div> 
+    </div>
+  </div>
+  <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
+    <div class="d-flex align-items-center gap-3 ">
+      <div class="d-flex flex-column gap-2">
+        <div class="fw-bold">11-01-2023 (11:30)</div>
+        <p class="mb-0 fs-6">Nâng cấp thiết bị, cơ sở vật chất cho trường học</p>
+      </div> 
+    </div>
+  </div>
   <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
     <div class="d-flex align-items-center gap-3 ">
       <div class="d-flex flex-column gap-2">
