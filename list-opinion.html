@@ -12,29 +12,29 @@
 <body>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 123) {
-                document.getElementById('navbar_top').classList.add('fixed-top');
-                navbar_height = document.querySelector('.navbar').offsetHeight;
-                document.body.style.paddingTop = navbar_height + 'px';
-            } else {
-                document.getElementById('navbar_top').classList.remove('fixed-top');
-                document.body.style.paddingTop = '0';
-            }
-        });
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 123) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+          document.body.style.paddingTop = '0';
+        }
+      });
     });
 
 
-</script>
+  </script>
   <header class="text-white bg-dark d-flex justify-content-between p-2 mb-3 " id="navbar_top">
     <div class="w-25 text-start pt-2 ms-1">
       <a href="dashboard.html"><i class="fa-solid fa-chevron-left text-white fa-lg "></i></a>
     </div>
-    <div class="w-50 fs-2">Góp ý kiến</div>
-    <div class="w-25 text-end pt-2">
+    <div class="w-75 fs-2">Đóng góp ý kiến</div>
+    <!-- <div class="w-25 text-end pt-2">
      <button data-toggle="modal" class="bg-dark border-0" data-target="#exampleModal"><i class="fa-regular fs-1 fa-square-plus text-white fa-lg ">
      </i></button>
-   </div>
+   </div> -->
 
 
    <!-- Button trigger modal -->
@@ -59,7 +59,7 @@
     </div>
   </div>
 </header>
-<div class="container">
+<div class="container mb-5">
   <div class=" border-bottom bg-white rounded-4 p-2 mb-2">
     <div class="d-flex align-items-center gap-3 ">
       <div class="d-flex flex-column gap-2">
@@ -184,6 +184,48 @@
   </div>
 
 </div>
+<div class="fixed-action-btn mb-3">
+  <a class="btn btn-large btn-primary rounded-circle">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </a>
+  <ul>
+    <li><a class="modal-url btn rounded-circle btn-info" data-toggle="modal" class="bg-dark border-0" data-target="#exampleModal"><i class="fas fa-plus" aria-hidden="true"></i></a></li>
+  </ul>
+
+</div>
+<footer>
+  <nav class="navbar navbar-expand-sm  navbar-dark fixed-bottom py-2 justify-content-center border-top" style="background-color: #E6E6FA">
+    <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+      <li class="nav-item me-3">
+        <a href="history-face.html" class="nav-link text-black text-center" aria-current="true" data-bs-toggle="tab"> 
+          <i class="fa-solid fa-calendar-check fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav-item mx-2">
+        <a href="scores.html" class="nav-link text-black text-center " aria-current="true" data-bs-toggle="tab"> 
+          <i class="fa-solid fa-pen-nib fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav-item mx-3">
+        <a href="dashboard.html" class="nav-link text-black text-center" aria-current="true" data-bs-toggle="tab"> 
+          <i class="fa-solid fa-house fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav-item mx-2">
+        <a href="schedule.html" class="nav-link text-black text-center" aria-current="true" data-bs-toggle="tab"> 
+          <i class="fa-solid fa-calendar-days fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav-item ms-3">
+        <a href="notification.html" class="nav-link text-black text-center" aria-current="true" data-bs-toggle="tab"> 
+          <i class="fa-solid fa-bell fa-lg"></i>
+        </a>
+      </li>
+
+      
+    </ul> 
+  </nav>
+</footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
