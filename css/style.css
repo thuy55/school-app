@@ -1,5 +1,5 @@
 body{
-	background-color: #F5F8FA;
+	background-color: #EDEDF5;
     font-family: "Rubik", sans-serif;
 
 }
@@ -33,6 +33,7 @@ body{
 } */
 header{
     z-index: 999;
+    background-color: #3333CC;
 }
 .listmeals{
     margin-top: 75px;
@@ -49,7 +50,7 @@ a{
     z-index: 1000;
 }
 .card-header-tabs .nav-link.active {
-    background-color: #DDDDDD;
+    background-color: #EDEDF5;
 }
 
 .fixed-action-btn {
