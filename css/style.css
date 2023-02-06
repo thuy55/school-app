@@ -1,6 +1,10 @@
 body{
 	background-color: #EDEDF5;
+<<<<<<< HEAD
     font-family: "Rubik", sans-serif;
+=======
+    font-family: "Tahoma", sans-serif;
+>>>>>>> db79096 (abc)
 
 }
 
@@ -33,7 +37,11 @@ body{
 } */
 header{
     z-index: 999;
+<<<<<<< HEAD
     background-color: #3333CC;
+=======
+    background-color: #30315F;
+>>>>>>> db79096 (abc)
 }
 .listmeals{
     margin-top: 75px;
