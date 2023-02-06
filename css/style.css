@@ -1,6 +1,6 @@
 body{
 	background-color: #EDEDF5;
-    font-family: "Rubik", sans-serif;
+    font-family: "Tahoma", sans-serif;
 
 }
 
@@ -33,7 +33,7 @@ body{
 } */
 header{
     z-index: 999;
-    background-color: #3333CC;
+    background-color: #30315F;
 }
 .listmeals{
     margin-top: 75px;
